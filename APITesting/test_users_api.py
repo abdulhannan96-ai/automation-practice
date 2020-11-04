@@ -30,7 +30,7 @@ class test_users_api(unittest.TestCase):
 
     def test_create_new_user(self):
         self.create_url = "https://reqres.in/api/users"
-        file = open('C:\\Users\\Abdul Hannan\\AppData\\Local\\Programs\\Python\\Python39\\SampleProjects\\APITesting\\createuser.json','r')
+        file = open('create User Json file locatio here','r')
         json_input = file.read()
         request_json = json.loads(json_input)
         print(request_json)
@@ -44,7 +44,7 @@ class test_users_api(unittest.TestCase):
 
     def test_update_user(self):
         self.update_url = "https://reqres.in/api/users/2"
-        file = open('C:\\Users\\Abdul Hannan\\AppData\\Local\\Programs\\Python\\Python39\\SampleProjects\\APITesting\\createuser.json','r')
+        file = open('createuser.json location here','r')
         json_input = file.read()
         request_json = json.loads(json_input)
         self.response = requests.put(self.update_url,request_json)
