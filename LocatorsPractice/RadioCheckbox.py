@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.support.select import Select
 
-chromedriver_location = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/Drivers/chromedriver.exe"
+chromedriver_location = "Your Driver Loaction"
 driver = webdriver.Chrome(chromedriver_location)
 driver.implicitly_wait(10)
 driver.maximize_window()
@@ -20,4 +20,4 @@ status=driver.find_element_by_id("RESULT_RadioButton-7_0").is_selected()
 
 obj = Select(driver.find_element_by_name("RESULT_RadioButton-9"))
 obj.select_by_index(3)
-driver.find_element_by_id("RESULT_FileUpload-10").send_keys("C://Users/Abdul Hannan/Pictures/2018-08/car3.png")
+driver.find_element_by_id("RESULT_FileUpload-10").send_keys("your image location")
