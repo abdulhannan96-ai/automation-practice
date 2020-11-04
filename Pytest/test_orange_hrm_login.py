@@ -4,7 +4,7 @@ from selenium import webdriver
 class orangehrmlogin(unittest.TestCase):
     @classmethod
     def setUp(self):
-        self.chromedriver_location = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/Drivers/chromedriver.exe"
+        self.chromedriver_location = "Your Driver Location"
         self.driver = webdriver.Chrome(self.chromedriver_location)
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
@@ -26,6 +26,6 @@ class orangehrmlogin(unittest.TestCase):
         print("Test Completed")
 
 if __name__ == "__main__":
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:\\Users\Abdul Hannan\AppData\Local\Programs\Python\Python39\SampleProjects\Pytest\Reports'))
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='Path where html report should be produced'))
 
 
