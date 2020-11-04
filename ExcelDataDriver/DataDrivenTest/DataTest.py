@@ -1,12 +1,12 @@
 from selenium import webdriver
 import Xlutils
 
-chromedriver_location = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/Drivers/chromedriver.exe"
+chromedriver_location = "Your Chrome Driver Location"
 driver = webdriver.Chrome(chromedriver_location)
 driver.get("http://demo.guru99.com/test/newtours/index.php")
 driver.maximize_window()
 
-path = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/ExcelSheets/LoginTest.xlsx"
+path = "Your Excel File Location"
 
 rows = Xlutils.getRowCount(path,'Sheet1')
 print(rows)
