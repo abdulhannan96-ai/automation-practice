@@ -13,25 +13,25 @@ class search_and_add(unittest.TestCase):
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
 
-    # def test_search_category(self):
-    #     self.driver.get("http://automationpractice.com/index.php")
-    #     self.driver.find_element_by_name("search_query").send_keys("Printed")
-    #     sleep(3)
-    #     self.driver.find_element_by_name("submit_search").click()
-    #     self.driver.execute_script("window.scrollBy(0,525)", "")
-    #     sleep(4)
-    #     image = "2"
-    #     element_to_hover = self.driver.find_element_by_xpath("//*[@id='center_column']/ul/li["+image+"]/div/div[1]/div/a[1]/img")
-    #     actions = ActionChains(self.driver)
-    #     actions.move_to_element(element_to_hover).perform()
-    #     sleep(5)
-    #     self.driver.find_element_by_xpath("//*[@id='center_column']/ul/li[2]/div/div[2]/div[2]/a[1]/span").click()
-    #     sleep(10)
-    #
-    # def test_validate_cart(self):
-    #     self.test_search_category()
-    #     self.driver.find_element_by_xpath("//*[@id='layer_cart']/div[1]/div[2]/div[4]/a").click()
-    #     sleep(5)
+    def test_search_category(self):
+        self.driver.get("http://automationpractice.com/index.php")
+        self.driver.find_element_by_name("search_query").send_keys("Printed")
+        sleep(3)
+        self.driver.find_element_by_name("submit_search").click()
+        self.driver.execute_script("window.scrollBy(0,525)", "")
+        sleep(4)
+        image = "2"
+        element_to_hover = self.driver.find_element_by_xpath("//*[@id='center_column']/ul/li["+image+"]/div/div[1]/div/a[1]/img")
+        actions = ActionChains(self.driver)
+        actions.move_to_element(element_to_hover).perform()
+        sleep(5)
+        self.driver.find_element_by_xpath("//*[@id='center_column']/ul/li[2]/div/div[2]/div[2]/a[1]/span").click()
+        sleep(10)
+    
+    def test_validate_cart(self):
+        self.test_search_category()
+        self.driver.find_element_by_xpath("//*[@id='layer_cart']/div[1]/div[2]/div[4]/a").click()
+        sleep(5)
 
     def test_add_with_different_categories(self):
         self.driver.get("http://automationpractice.com/index.php")
