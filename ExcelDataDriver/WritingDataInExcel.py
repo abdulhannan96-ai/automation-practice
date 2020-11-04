@@ -1,5 +1,5 @@
 import openpyxl
-path = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/ExcelSheets/TestToWriteData.xlsx"
+path = "Excel file location"
 work_book = openpyxl.load_workbook(path)
 sheet = work_book.active
 
