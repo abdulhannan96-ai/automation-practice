@@ -2,7 +2,7 @@ from selenium import webdriver
 #from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 
-chromedriver_location = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/Drivers/chromedriver.exe"
+chromedriver_location = "Your Driver Loaction"
 driver = webdriver.Chrome(chromedriver_location)
 driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html")
 driver.maximize_window()
