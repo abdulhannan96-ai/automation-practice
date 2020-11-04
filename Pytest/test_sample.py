@@ -3,7 +3,7 @@ from selenium import webdriver
 import time  
 def test_setup():
     global driver
-    chromedriver_location = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/Drivers/chromedriver.exe"
+    chromedriver_location = "Your Driver Location"
     driver = webdriver.Chrome(chromedriver_location)
     driver.implicitly_wait(10)
     driver.maximize_window()
