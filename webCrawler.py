@@ -1,6 +1,6 @@
 import csv
 from selenium import webdriver
-chromedriver_location = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/Drivers/chromedriver.exe"
+chromedriver_location = "Your Driver Loaction"
 driver = webdriver.Chrome(chromedriver_location)
 MAX_PAGE_NUM = 5
 MAX_PAGE_DIGIT = 3
