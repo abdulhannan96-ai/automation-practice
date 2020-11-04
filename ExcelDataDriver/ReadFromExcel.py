@@ -1,5 +1,5 @@
 import openpyxl
-path = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/ExcelSheets/EmployeeSheet.xlsx"
+path = "Your excel file location"
 work_book = openpyxl.load_workbook(path)
 sheet = work_book.active      #work_book.get_sheet_by_name("Sheet1")
 max_rows = sheet.max_row
