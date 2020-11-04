@@ -4,7 +4,7 @@ import requests
 
 def test_add_new_student():
     api_url = "http://thetestingworldapi.com/api/studentsDetails"
-    file = open('C:\\Users\\Abdul Hannan\\AppData\\Local\\Programs\\Python\\Python39\\SampleProjects\\APITesting\\Student.json','r')
+    file = open('Student.json file location here','r')
     file_input = file.read()
     request_json = json.loads(file_input)
     response = requests.post(api_url,request_json)
@@ -13,7 +13,7 @@ def test_add_new_student():
     print(id[0])
 
     tech_url = "http://thetestingworldapi.com/api/technicalskills"
-    file = open('C:\\Users\\Abdul Hannan\\AppData\\Local\\Programs\\Python\\Python39\\SampleProjects\\APITesting\\technicaldetails.json','r')
+    file = open('technical detailsl json file location here','r')
     file_input = file.read()
     request_json['id'] = int(id[0])
     request_json['st_id'] = id[0]
@@ -22,7 +22,7 @@ def test_add_new_student():
     print(response.text)
 
     address_url = "http://thetestingworldapi.com/api/addresses"
-    file = open('C:\\Users\\Abdul Hannan\\AppData\\Local\\Programs\\Python\\Python39\\SampleProjects\\APITesting\\address.json','r')
+    file = open('address.json file location here','r')
     file_input = file.read()
     request_json['stId'] = id[0]
     request_json = json.loads(file_input)
