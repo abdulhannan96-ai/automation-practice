@@ -3,7 +3,7 @@ import unittest
 
 class testAssertions(unittest.TestCase):
     def test01_search(self):
-        self.chromedriver_location = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/Drivers/chromedriver.exe"
+        self.chromedriver_location = "Your Driver Loaction"
         self.driver = webdriver.Chrome(self.chromedriver_location)
         self.driver.get("https://google.com")
         self.titleOfWebPage  = self.driver.title
@@ -13,7 +13,7 @@ class testAssertions(unittest.TestCase):
         self.assertNotEqual("Google123",self.titleOfWebPage)
         self.driver.close()
     def test02_searchAsserttrueFalse(self):
-        self.chromedriver_location = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/Drivers/chromedriver.exe"
+        self.chromedriver_location = "Your Driver Loaction"
         self.driver = webdriver.Chrome(self.chromedriver_location)
         self.driver.get("https://google.com")
         self.titleOfWebPage  = self.driver.title
