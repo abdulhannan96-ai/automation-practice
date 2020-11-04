@@ -1,0 +1,39 @@
+{
+  "Permanent_Address": {
+    "House_Number": "244",
+    "City": "Islamabad",
+    "State": "ICT",
+    "Country": "Pakistan",
+    "PhoneNumber": [
+      {
+        "Std_Code": "+92",
+        "Home": "5887309",
+        "Mobile": "090078601"
+      },
+      {
+        "Std_Code": "+92",
+        "Home": "5887309",
+        "Mobile": "090078601"
+      }
+    ]
+  },
+  "Current_Address": {
+    "House_Number": "244",
+    "City": "Islamabad",
+    "State": "ICT",
+    "Country": "Pakistan",
+    "PhoneNumber": [
+      {
+        "Std_Code": "+92",
+        "Home": "588678",
+        "Mobile": "090078601"
+      },
+      {
+        "Std_Code": "+92",
+        "Home": "5886798",
+        "Mobile": "090078601"
+      }
+    ]
+  },
+  "stId": "78278"
+}
