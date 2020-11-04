@@ -1,4 +1,4 @@
 import pyttsx3 
 friend = pyttsx3.init()
-friend.say("Nabeesha Pani ka glass pilao")
+friend.say("Alexa call a 911")
 friend.runAndWait()
