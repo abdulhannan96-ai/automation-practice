@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 import  time
-chromedriver_location = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/Drivers/chromedriver.exe"
+chromedriver_location = "Your Driver Loaction"
 driver = webdriver.Chrome(chromedriver_location)
 driver.get("http://demo.automationtesting.in/Register.html")
 # driver.maximize_window()
@@ -10,13 +10,13 @@ driver.find_element_by_xpath("//*[@id='basicBootstrapForm']/div[1]/div[1]/input"
 #sending Last Name
 driver.find_element_by_xpath("//*[@id='basicBootstrapForm']/div[1]/div[2]/input").send_keys("Imtiaz")
 #sendin Address
-driver.find_element_by_xpath("//*[@id='basicBootstrapForm']/div[2]/div/textarea").send_keys("House no 244, Street 91, E11/2")
+driver.find_element_by_xpath("//*[@id='basicBootstrapForm']/div[2]/div/textarea").send_keys("address")
 #sending Photo
-driver.find_element_by_xpath("//*[@id='imagesrc']").send_keys("E:/Hanan Data/documents/350x350.jpg")
+driver.find_element_by_xpath("//*[@id='imagesrc']").send_keys("image location")
 #sending Email
-driver.find_element_by_xpath("//*[@id='eid']/input").send_keys("ahimtiaz3@gmail.com")
+driver.find_element_by_xpath("//*[@id='eid']/input").send_keys("your email address")
 #sending Phone
-driver.find_element_by_xpath("//*[@id='basicBootstrapForm']/div[4]/div/input").send_keys("03345855556")
+driver.find_element_by_xpath("//*[@id='basicBootstrapForm']/div[4]/div/input").send_keys("your number")
 #selecting Gender
 driver.find_element_by_xpath("//*[@id='basicBootstrapForm']/div[5]/div/label[1]/input").click()
 #selecting Hobby
