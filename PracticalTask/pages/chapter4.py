@@ -4,6 +4,7 @@ class Chapter4():
         self.driver = driver
         self.select_box = "selecttype"
         self.values_array = ["Selenium IDE", "Selenium Core", "Selenium RC", "Selenium Grid"]
+        #getting values from selectbox
         self.selectFirstValue = self.driver.find_element_by_xpath("//*[@id='selecttype']/option[1]").text
         self.selectSecondValue = self.driver.find_element_by_xpath("//*[@id='selecttype']/option[2]").text
         self.selectThirdValue = self.driver.find_element_by_xpath("//*[@id='selecttype']/option[3]").text
