@@ -8,7 +8,7 @@ from SampleProjects.PracticalTask.pages.chapter4 import Chapter4
 
 class practicalTask (unittest.TestCase):
     def setUp(self):
-        self.chromedriver_location = "C:/Users/Abdul Hannan/AppData/Local/Programs/Python/Python39/Drivers/chromedriver.exe"
+        self.chromedriver_location = "location of your chromedriver.exe file here"
         self.driver = webdriver.Chrome(self.chromedriver_location)
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
